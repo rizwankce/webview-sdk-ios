@@ -62,7 +62,7 @@ You can set the following configuration on the bot
 ```
 
 ### Payload References
-You can set payload values according to requirement. The following are some sample payloads that you can set.
+You can set payload values according to requirement. Following are some sample payloads that you can set.
 ```js
     "User" : "<BOT_ID_FROM_YM>",
     "EnableSpeech" : "<true or false as String>"
