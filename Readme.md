@@ -53,6 +53,20 @@ Example swift code to use the plugin
     }
 ```
 
+### Configuration References
+You can set the following configuration on the bot
+```js
+    "BotId" : "<BOT_ID_FROM_YM>",
+    "EnableSpeech" : "<true or false as String>"
+```
+
+### Payload References
+You can set payload values according to requirement. The following are some sample payloads that you can set.
+```js
+    "User" : "<BOT_ID_FROM_YM>",
+    "EnableSpeech" : "<true or false as String>"
+```
+
 ## Features [BETA]
 
 To use the voice first feature, add the following to your info.plist file if the permissions are not added already.
@@ -68,16 +82,3 @@ Then add the following key to configuration:
         let config:[String:String] = ["BotId" : "<BOT-ID>", "EnableSpeech":"true"]
 ```
 
-### Configuration References
-You can set the following configuration on the bot
-```js
-    "BotId" : "<BOT_ID_FROM_YM>",
-    "EnableSpeech" : "<true or false as String>"
-```
-
-### Payload References
-You can set payload values according to requirement. The following are some sample payloads that you can set.
-```js
-    "User" : "<BOT_ID_FROM_YM>",
-    "EnableSpeech" : "<true or false as String>"
-```
