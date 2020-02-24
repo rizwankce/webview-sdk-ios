@@ -53,7 +53,7 @@ Example swift code to use the plugin
     }
 ```
 
-## Features
+## Features [BETA]
 
 To use the voice first feature, add the following to your info.plist file if the permissions are not added already.
 ```plist
