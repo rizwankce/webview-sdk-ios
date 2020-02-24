@@ -5,12 +5,11 @@ Yellow Messenger WebView SDK iOS
 
 Clone the repository then add the following files in your xcode project by going to **File>Add Files to < Project-Name >** 
 
-**1. [YmSDK.swift](YmSDK.swift)**
-**2. [YmEvents.swift](YmEvents.swift)**
-**3. [YmBotPlugin.swift](YmBotPlugin.swift)**
+**1. [YmSDK.swift](YmSDK.swift)**  
+**2. [YmEvents.swift](YmEvents.swift)**  
+**3. [YmBotPlugin.swift](YmBotPlugin.swift)**  
 
  
-
 
 ## Example
 Example swift code to use the plugin
