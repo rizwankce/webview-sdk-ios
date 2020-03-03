@@ -58,14 +58,14 @@ Example swift code to use the plugin
 You can set the following configuration on the bot
 ```js
     "BotId" : "<BOT_ID_FROM_YM>",
-    "EnableSpeech" : "<true or false as String>"
+    "EnableHistory" : "<true or false as String>"
 ```
 
 ### Payload References
 You can set payload values according to requirement. Following are some sample payloads that you can set.
 ```js
-    "User" : "<BOT_ID_FROM_YM>",
-    "EnableSpeech" : "<true or false as String>"
+    "userFullName":"<User-Name>", 
+    "token":"<Access-Token>"
 ```
 
 ## Features [BETA]
