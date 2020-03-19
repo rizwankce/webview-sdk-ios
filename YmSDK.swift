@@ -60,7 +60,7 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
         let botId = (YmBotPlugin.shared.configData["BotId"] ?? ""
         let enableHistory = (YmBotPlugin.shared.configData["enableHistory"] ?? "false"
 
-        let urlString = "https://yellowmessenger.github.io/pages/dominos/mobile.html?botId=\(botId)&enableHistory=\(enableHistory)&payload=\(payload)"
+        let urlString = "https://yellowmessenger.github.io/pages/dominos/mobile.html?botId=\(botId)&enableHistory=\(enableHistory)&ym.payload=\(payload)"
         
         if let url = URL(string: urlString) {
             let request = URLRequest(url: url)
