@@ -3,7 +3,7 @@ Yellow Messenger WebView SDK iOS
 
 ## Setup
 
-Clone the repository then add the following files in your xcode project by going to **File>Add Files to < Project-Name >** 
+Clone the [repository](https://github.com/yellowmessenger/webview-sdk-ios) then add the following files in your xcode project by going to **File>Add Files to < Project-Name >** 
 
 **1. [YmSDK.swift](YmSDK.swift)**  
 **2. [YmEvents.swift](YmEvents.swift)**  
