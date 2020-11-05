@@ -58,7 +58,8 @@ Example swift code to use the plugin
 You can set the following configuration on the bot
 ```js
     "BotId" : "<BOT_ID_FROM_YM>",
-    "EnableHistory" : "<true or false as String>"
+    "EnableHistory" : "<true or false as String>",
+    "EnableSpeech" : "<true or false as String>"
 ```
 
 ### Payload References
