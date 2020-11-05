@@ -1,5 +1,6 @@
 //
 //  YmBotPlugin.swift
+//  abhic-testing
 //
 //  Created by Priyank Upadhyay on 24/02/20.
 //  Copyright © 2020 Priyank Upadhyay. All rights reserved.
@@ -35,6 +36,7 @@ class YmBotPlugin{
         self.window = window
         window.makeKeyAndVisible()
     }
+    
     func stopChatBot(){
         self.window.rootViewController = nil
     }
@@ -43,7 +45,9 @@ class YmBotPlugin{
          payload.forEach({ (key: String, value: String) in
             payloadData += "%22\(key)%22:%22\(value)%22,"
         })
-        payloadData += "%22Platform%22%3A%22iOS-App%22%7D"
-    
+        payloadData += "%22Platform%22:%22iOS-App%22%7D"
     }
 }
+
+
+

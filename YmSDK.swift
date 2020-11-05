@@ -1,5 +1,6 @@
 //
-//  YmSDK.swift
+//  YMSDK.swift
+//  ymsdk
 //
 //  Created by Priyank Upadhyay.
 //  Copyright © 2020 Yellow Messenger. All rights reserved.
@@ -18,7 +19,7 @@ struct JavascriptFunction {
     var callback: JavascriptCallback
 }
 
-public class ChatController: UIViewController, WKScriptMessageHandler, UIWebViewDelegate, SFSpeechRecognizerDelegate {
+public class ChatController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, SFSpeechRecognizerDelegate, AVSpeechSynthesizerDelegate {
 
     private func makeFunction(withString string:String, andCallback callback:@escaping JavascriptCallback) -> JavascriptFunction {
         JavascriptFunction(functionString: string, callback: callback)
@@ -31,18 +32,35 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
                 let data = dict["data"] as? String else {
                     return
             }
+            if code == "start-mic" {
+//            self.micButton()
+//                self.textToSpeech(text: data)
+            }
+            if code == "start-mic-ios" {
+//            self.micButton()
+                self.textToSpeech(text: data)
+            }
             YmBotPlugin.shared.events.trigger(eventName: "BotEvent", information: ["code" : code, "data" : data])
+
         }
     }
 
     var webView:WKWebView!
     var button:UIButton!
     var textView:UITextView!
+    var progressView:UIProgressView!
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-US"))
+
 
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        
+        progressView = UIProgressView(progressViewStyle: .default)
+        progressView.sizeToFit()
+        progressView.frame.size = CGSize(width: UIScreen.main.bounds.width - 40, height: 60)
+        progressView.frame.origin = CGPoint(x: 20 , y: (view.frame.maxY/2))
+
         
         //WebView
         let ymHandler = "ymHandler"
@@ -54,30 +72,35 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
         contentController.add(self, name: ymHandler)
         configuration.userContentController = contentController
         let rect = CGRect(x:0, y:0, width:UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-        webView = WKWebView(frame: rect, configuration: configuration)
+        self.webView = WKWebView(frame: rect, configuration: configuration)
+        self.webView.navigationDelegate = self
+        
         view.addSubview(webView)
         let payload = YmBotPlugin.shared.payloadData
-        let botId = (YmBotPlugin.shared.configData["BotId"] ?? ""
-        let enableHistory = (YmBotPlugin.shared.configData["enableHistory"] ?? "false"
 
-        let urlString = "https://yellowmessenger.github.io/pages/dominos/mobile.html?botId=\(botId)&enableHistory=\(enableHistory)&ym.payload=\(payload)"
+        let urlString = "https://yellowmessenger.github.io/pages/dominos/mobile.html?botId=\(YmBotPlugin.shared.configData["BotId"] ?? "")&enableHistory=false&hideTitleBar=false&ym.payload=\(payload)"
+
+        print(urlString)
         
         if let url = URL(string: urlString) {
             let request = URLRequest(url: url)
             webView.load(request)
         }
-        //End Webview
+        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         
+        //End Webview
         if (YmBotPlugin.shared.configData["EnableSpeech"] != nil && YmBotPlugin.shared.configData["EnableSpeech"] == "true") {
-            //Mic Button
+                    // Mic Button
                     button = UIButton(type: .custom)
-                    button.frame.origin = CGPoint(x: (view.frame.maxX - 80) , y: (view.frame.maxY - 80))
+                    button.frame.origin = CGPoint(x: (view.frame.maxX - 100) , y: (view.frame.maxY - 140))
                     button.frame.size =  CGSize(width: 70, height: 70)
                     button.layer.cornerRadius = 0.5 * button.bounds.size.width
                     button.clipsToBounds = true
-                    button.backgroundColor = UIColor.red
+            button.backgroundColor = UIColor(red: 0/255.0, green: 172/255.0, blue: 220/255.0, alpha: 1.0)
+            button.setImage(UIImage(named: "mic_icon"), for: .normal)
+            button.imageView?.contentMode = .scaleAspectFit
+            button.imageEdgeInsets = UIEdgeInsets(top: 25, left: 25, bottom: 25, right: 25)
                     button.isHidden = true
-            //        button.setImage(UIImage(named:"thumbsUp.png"), for: .normal)
                     button.addTarget(self, action: #selector(micButton), for: .touchUpInside)
                     view.insertSubview(button, aboveSubview: webView)
                     //End MicButton
@@ -87,12 +110,11 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
                     textView = UITextView(frame: frame)
                     textView.contentInsetAdjustmentBehavior = .automatic
                     textView.textAlignment = NSTextAlignment.justified
-                    textView.textColor = UIColor.blue
+                    textView.textColor = UIColor(red: 86/255.0, green: 88/255.0, blue: 103/255.0, alpha: 1.0)
                     textView.isEditable = false
-                    textView.backgroundColor = UIColor.lightGray
+                    textView.backgroundColor = UIColor(red: 249/255.0, green: 249/255.0, blue: 249/255.0, alpha: 1.0)
                     textView.isHidden = true
                     view.insertSubview(textView, aboveSubview: webView)
-                    
                     //End Speech results area
                     
                     //Speech Permissions
@@ -118,8 +140,42 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
                     }
                     //End Speech Premissions
         }
-        
-        
+        view.addSubview(progressView)
+        let statusBarHeight = UIApplication.shared.isStatusBarHidden ? CGFloat(0) : UIApplication.shared.statusBarFrame.height
+                     
+        let cancelButton = UIButton(type: .custom)
+        cancelButton.setImage(UIImage(named: "close"), for: .normal)
+        cancelButton.frame = CGRect(x: (self.view.frame.width - 50), y: (statusBarHeight + 15.0), width: 25, height: 25)
+        cancelButton.addTarget(self, action: #selector(dismisViewController), for: .touchUpInside)
+        view.addSubview(cancelButton)
+        view.bringSubviewToFront(cancelButton)
+    }
+    
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if let url = navigationAction.request.url {
+             if url.host != "yellowmessenger.github.io" {
+                           UIApplication.shared.open(url)
+                           decisionHandler(.cancel)
+                           return
+                       }
+        }
+
+        decisionHandler(.allow)
+    }
+          
+
+   @objc func dismisViewController() {
+    self.view.window?.isHidden = true
+    self.presentingViewController?.dismiss(animated: true, completion: nil)
+      }
+    
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "estimatedProgress" {
+            self.progressView.progress = Float(webView.estimatedProgress)
+        }
+        if self.progressView.progress == 1.0 {
+            self.progressView.isHidden = true
+        }
     }
     
     func enableButton(show:Bool){
@@ -127,6 +183,20 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
         self.button.isHidden = !show
        }
     }
+    
+    //TTS
+    let synthesizer = AVSpeechSynthesizer()
+    public func textToSpeech(text:String){
+        let utterance = AVSpeechUtterance(string: text)
+        synthesizer.delegate = self
+        synthesizer.speak(utterance)
+    }
+    
+    public func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer,
+                           didFinish utterance: AVSpeechUtterance){
+        self.micButton()
+    }
+    //End TTS
     
     private let audioEngine = AVAudioEngine()
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
@@ -137,11 +207,13 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
     //On button Press
     @objc func micButton(){
         if audioEngine.isRunning {
+            button.setImage(UIImage(named: "mic_icon"), for: .normal)
             audioEngine.stop()
-            recognitionRequest?.endAudio()
+            recognitionRequest = nil
             sendMessage(text: textView.text)
             textView.isHidden = true
         } else {
+            button.setImage(UIImage(named: "close"), for: .normal)
             textView.isHidden = false
             startRecording()
         }
@@ -166,6 +238,7 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
         
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         let inputNode = audioEngine.inputNode
+        inputNode.removeTap(onBus: 0)
         
         guard let recognitionRequest = recognitionRequest else {
             fatalError("Unable to create an SFSpeechAudioBufferRecognitionRequest object")
@@ -187,10 +260,10 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
             if error != nil || isFinal {
                 // Stop recognizing speech if there is a problem.
                 self.audioEngine.stop()
-                inputNode.removeTap(onBus: 0)
                 self.recognitionRequest = nil
                 self.recognitionTask = nil
             }
+                self.restartSpeechTimer()
         }
         
         let recordingFormat = inputNode.outputFormat(forBus: 0)
@@ -218,7 +291,8 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
     }
     
     func sendMessage(text:String){
-        let function:JavascriptFunction = makeFunction(withString: "sendEventFromiOS('\(text)');", andCallback: { success,result in})
+        if (text != "")
+        { let function:JavascriptFunction = makeFunction(withString: "sendEventFromiOS('\(text)');", andCallback: { success,result in})
         webView.evaluateJavaScript(function.functionString ) { (response, error) in
                if let _ = error {
                 function.callback(false, error.debugDescription)
@@ -227,6 +301,20 @@ public class ChatController: UIViewController, WKScriptMessageHandler, UIWebView
                    function.callback(true, response)
                }
            }
+        }
+    }
+    
+    func restartSpeechTimer() {
+        self.detectionTimer?.invalidate()
+        self.detectionTimer = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false, block: { (timer) in
+            self.audioEngine.stop()
+            self.recognitionTask?.cancel()
+            self.sendMessage(text: self.textView.text)
+            self.textView.text = ""
+            self.textView.isHidden = true
+            self.button.setImage(UIImage(named: "mic_icon"), for: .normal)
+
+        })
     }
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
