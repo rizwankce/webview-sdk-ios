@@ -9,6 +9,8 @@ Clone the repository then add the following files in your xcode project by going
 **2. [YmEvents.swift](YmEvents.swift)**  
 **3. [YmBotPlugin.swift](YmBotPlugin.swift)**  
 
+Also add the the icons for mic button and close button in assets.
+
  
 
 ## Example
