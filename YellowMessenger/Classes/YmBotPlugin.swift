@@ -38,7 +38,10 @@ public class YmBotPlugin{
             self.window = window
             window.makeKeyAndVisible()
         } else {
-            // FIXME: for iOS 13.0 <
+            let window = UIWindow.init(frame: UIScreen.main.bounds)
+            window.rootViewController = chatViewer
+            self.window = window
+            window.makeKeyAndVisible()
         }
 
     }
