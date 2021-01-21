@@ -1,0 +1,27 @@
+{
+  "name": "YellowMessenger",
+  "version": "0.1.0",
+  "summary": "YellowMessenger SDK for iOS.",
+  "description": "YellowMessenger SDK for iOS",
+  "homepage": "https://github.com/yellowmessenger/webview-sdk-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yellowmessenger": "yellowmessenger@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/yellowmessenger/webview-sdk-ios",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "YellowMessenger/Classes/**/*",
+  "resource_bundles": {
+    "YellowMessenger": [
+      "YellowMessenger/**/*.xcassets"
+    ]
+  }
+}

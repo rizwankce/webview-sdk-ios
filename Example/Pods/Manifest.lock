@@ -1,0 +1,16 @@
+PODS:
+  - YellowMessenger (0.1.0)
+
+DEPENDENCIES:
+  - YellowMessenger (from `../`)
+
+EXTERNAL SOURCES:
+  YellowMessenger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YellowMessenger: 2c9b377ee916b4ba7b48f1bb2eb29c228c531621
+
+PODFILE CHECKSUM: cf1f2b44795272ad142387f89bed58715a641166
+
+COCOAPODS: 1.10.1

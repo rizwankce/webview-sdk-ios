@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095C12463E3E95B39CB9195520843946 /* Pods-YellowMessenger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 745DD8D7DE0B01A3BD13D76FB188A9E2 /* Pods-YellowMessenger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A63D7FFBF54194DF493B2B02BFDA947 /* Pods-YellowMessenger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E79E06EAAA860D2B1E14AD5170FC3 /* Pods-YellowMessenger_Example-dummy.m */; };
+		179E4FBC9BB8894DCE61D1E3C51EC6AA /* YellowMessenger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C070FDC881D9F785B25EDAF73A02E8D /* YellowMessenger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		242B11E3709394D4286E6CDBA57A8B22 /* Pods-YellowMessenger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBF9F515B3CCB6CCB153CA6DC208577 /* Pods-YellowMessenger_Tests-dummy.m */; };
+		3D0EC667CDD608F9AD3297B67FD5E376 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3D5541A59F33D1C02F619892F674E780 /* YmSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E65EF1DC7E70D06E54DA04EDF2F3EB3 /* YmSDK.swift */; };
+		5A05D0B2793E0EBE35D6D9D69B2C084D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		75F66C9299F5E96360FC5FEA6494C60F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7B4EE89532EA3DAA8B7F52F648EDB55A /* YellowMessenger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F10969FA1BB85359D5443132368A72D4 /* YellowMessenger-dummy.m */; };
+		A0CF63464D6D7D01349DFDC51D62FCDC /* YmEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DABB7BB5C99E29C955B67239F9A536C /* YmEvents.swift */; };
+		B33BAFFF69D6BBA1EE2F1AD3BD00266E /* Pods-YellowMessenger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F87FBF415ECD73262947407412CE9472 /* Pods-YellowMessenger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA792703F872C63F9A0FC2576910F320 /* YmBotPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888586246C68A451504A909D40A18EDB /* YmBotPlugin.swift */; };
+		D4FC04B6AC1636A73712CC335B423293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F740698646BD66BC9CE9F5E3318DB51 /* Assets.xcassets */; };
+		F534B0A6CC9ED589FD942D2C2020165D /* YellowMessenger.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 401B16E9D4AE71F79CC44B7ABBCBCFC9 /* YellowMessenger.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CB0DE4854EC993D8F1FA6B469A253E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6832DB0413E182C9DD7346E4EBFB9A26;
+			remoteInfo = YellowMessenger;
+		};
+		22485AAA3A538F427C613FFC5D2C9FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65E00CC57D3AFAD51149E50DAC411496;
+			remoteInfo = "Pods-YellowMessenger_Example";
+		};
+		5BB5325D0EDB3A4AC3C3C198588F4F62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E420086FB3693814D1397772359AA48;
+			remoteInfo = "YellowMessenger-YellowMessenger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1149C938C9D89FAF5A9DE82BAA13941B /* YellowMessenger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YellowMessenger.modulemap; sourceTree = "<group>"; };
+		128A009DFABE3E64DF3BC42BD5E23187 /* Pods-YellowMessenger_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YellowMessenger_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		14FAC34EFEECDEEC93F17768D5E5644C /* Pods-YellowMessenger_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YellowMessenger_Tests-Info.plist"; sourceTree = "<group>"; };
+		1591368A403B6764D20AB47EA727A266 /* Pods-YellowMessenger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YellowMessenger_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1872CDECFB585D586A5FC6C53AB64F47 /* Pods_YellowMessenger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YellowMessenger_Example.framework; path = "Pods-YellowMessenger_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		189A048489759DF562FF1C81BC5A12F0 /* Pods-YellowMessenger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowMessenger_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1ADD3ECE445C8A0BD5F08F79E132EA0B /* Pods-YellowMessenger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YellowMessenger_Tests.modulemap"; sourceTree = "<group>"; };
+		1DBF9F515B3CCB6CCB153CA6DC208577 /* Pods-YellowMessenger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YellowMessenger_Tests-dummy.m"; sourceTree = "<group>"; };
+		1F8B108C7F9FFC7A2C96016CC19A4736 /* YellowMessenger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YellowMessenger.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2305E3219271B113F6922493F975B166 /* Pods-YellowMessenger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowMessenger_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3BC47D68199B46362690D1388ED428EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		401B16E9D4AE71F79CC44B7ABBCBCFC9 /* YellowMessenger.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = YellowMessenger.bundle; path = "YellowMessenger-YellowMessenger.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49797F34F5F853DD59A669C9537B52A7 /* YellowMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YellowMessenger.framework; path = YellowMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C070FDC881D9F785B25EDAF73A02E8D /* YellowMessenger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YellowMessenger-umbrella.h"; sourceTree = "<group>"; };
+		5DABB7BB5C99E29C955B67239F9A536C /* YmEvents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YmEvents.swift; path = YellowMessenger/Classes/YmEvents.swift; sourceTree = "<group>"; };
+		5F740698646BD66BC9CE9F5E3318DB51 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = YellowMessenger/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		625EAE5BC93233D7FAEF29E6911590DA /* YellowMessenger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YellowMessenger-prefix.pch"; sourceTree = "<group>"; };
+		6A7FFDE30E13CC4598D5E19AE21C9A7F /* YellowMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YellowMessenger.debug.xcconfig; sourceTree = "<group>"; };
+		6D6B6738E7179EB9B1CB362C6B08B20D /* Pods-YellowMessenger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YellowMessenger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		745DD8D7DE0B01A3BD13D76FB188A9E2 /* Pods-YellowMessenger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YellowMessenger_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8788BFF4358CE4588A3A569E564511C6 /* ResourceBundle-YellowMessenger-YellowMessenger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-YellowMessenger-YellowMessenger-Info.plist"; sourceTree = "<group>"; };
+		888586246C68A451504A909D40A18EDB /* YmBotPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YmBotPlugin.swift; path = YellowMessenger/Classes/YmBotPlugin.swift; sourceTree = "<group>"; };
+		99CF3AB59E4F6E8FA8E10D734E97D856 /* Readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = Readme.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E65EF1DC7E70D06E54DA04EDF2F3EB3 /* YmSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YmSDK.swift; path = YellowMessenger/Classes/YmSDK.swift; sourceTree = "<group>"; };
+		A230246A08C87530DA0C0454F0DBB866 /* YellowMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YellowMessenger.release.xcconfig; sourceTree = "<group>"; };
+		AD1DEA6586883A424AA8BA453050C38E /* Pods-YellowMessenger_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YellowMessenger_Example-Info.plist"; sourceTree = "<group>"; };
+		B18C691EF2235BFFEAFDDED91D087B64 /* Pods-YellowMessenger_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YellowMessenger_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B2A7AA2400387149593B456DA88F7274 /* YellowMessenger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YellowMessenger-Info.plist"; sourceTree = "<group>"; };
+		B87E0F6CAF6AF3D280DBCB38B71C96D9 /* Pods-YellowMessenger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YellowMessenger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB8E79E06EAAA860D2B1E14AD5170FC3 /* Pods-YellowMessenger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YellowMessenger_Example-dummy.m"; sourceTree = "<group>"; };
+		C3BD52B275653A27B406033603CDD4D3 /* Pods-YellowMessenger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowMessenger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D96C5D8424C68097AEA2700D6C804ADD /* Pods-YellowMessenger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YellowMessenger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EF9DE45CBA07BAAC149502C22794474E /* Pods-YellowMessenger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YellowMessenger_Example.modulemap"; sourceTree = "<group>"; };
+		F10969FA1BB85359D5443132368A72D4 /* YellowMessenger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YellowMessenger-dummy.m"; sourceTree = "<group>"; };
+		F543D14D623540F7FD5DBB1CBEB6CB2D /* Pods_YellowMessenger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YellowMessenger_Tests.framework; path = "Pods-YellowMessenger_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87FBF415ECD73262947407412CE9472 /* Pods-YellowMessenger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YellowMessenger_Example-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1507BBD349E9F772BF5B85D4402B0A9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F66C9299F5E96360FC5FEA6494C60F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		450968C224E4EACA9DA4C6F55FEB761E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0EC667CDD608F9AD3297B67FD5E376 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78124DBB60EFCEF3DECBAC487BC0096A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906DAC75969FE17E3AE56F8D7AA47089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A05D0B2793E0EBE35D6D9D69B2C084D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2987F7FB9E04713E6375C0A632CB05A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8788BFF4358CE4588A3A569E564511C6 /* ResourceBundle-YellowMessenger-YellowMessenger-Info.plist */,
+				1149C938C9D89FAF5A9DE82BAA13941B /* YellowMessenger.modulemap */,
+				F10969FA1BB85359D5443132368A72D4 /* YellowMessenger-dummy.m */,
+				B2A7AA2400387149593B456DA88F7274 /* YellowMessenger-Info.plist */,
+				625EAE5BC93233D7FAEF29E6911590DA /* YellowMessenger-prefix.pch */,
+				5C070FDC881D9F785B25EDAF73A02E8D /* YellowMessenger-umbrella.h */,
+				6A7FFDE30E13CC4598D5E19AE21C9A7F /* YellowMessenger.debug.xcconfig */,
+				A230246A08C87530DA0C0454F0DBB866 /* YellowMessenger.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YellowMessenger";
+			sourceTree = "<group>";
+		};
+		2C2D3EA7ED1E79493AF2071F6E35DE53 /* YellowMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				5F740698646BD66BC9CE9F5E3318DB51 /* Assets.xcassets */,
+				888586246C68A451504A909D40A18EDB /* YmBotPlugin.swift */,
+				5DABB7BB5C99E29C955B67239F9A536C /* YmEvents.swift */,
+				9E65EF1DC7E70D06E54DA04EDF2F3EB3 /* YmSDK.swift */,
+				46E9D517CFD32D129B5F1111E4E5FE15 /* Pod */,
+				2987F7FB9E04713E6375C0A632CB05A7 /* Support Files */,
+			);
+			name = YellowMessenger;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		46E9D517CFD32D129B5F1111E4E5FE15 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3BC47D68199B46362690D1388ED428EC /* LICENSE */,
+				99CF3AB59E4F6E8FA8E10D734E97D856 /* Readme.md */,
+				1F8B108C7F9FFC7A2C96016CC19A4736 /* YellowMessenger.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		89AA470081C1C8B54CCEEE98922E56CF /* Pods-YellowMessenger_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EF9DE45CBA07BAAC149502C22794474E /* Pods-YellowMessenger_Example.modulemap */,
+				6D6B6738E7179EB9B1CB362C6B08B20D /* Pods-YellowMessenger_Example-acknowledgements.markdown */,
+				B87E0F6CAF6AF3D280DBCB38B71C96D9 /* Pods-YellowMessenger_Example-acknowledgements.plist */,
+				BB8E79E06EAAA860D2B1E14AD5170FC3 /* Pods-YellowMessenger_Example-dummy.m */,
+				1591368A403B6764D20AB47EA727A266 /* Pods-YellowMessenger_Example-frameworks.sh */,
+				AD1DEA6586883A424AA8BA453050C38E /* Pods-YellowMessenger_Example-Info.plist */,
+				F87FBF415ECD73262947407412CE9472 /* Pods-YellowMessenger_Example-umbrella.h */,
+				D96C5D8424C68097AEA2700D6C804ADD /* Pods-YellowMessenger_Example.debug.xcconfig */,
+				189A048489759DF562FF1C81BC5A12F0 /* Pods-YellowMessenger_Example.release.xcconfig */,
+			);
+			name = "Pods-YellowMessenger_Example";
+			path = "Target Support Files/Pods-YellowMessenger_Example";
+			sourceTree = "<group>";
+		};
+		A5E8872B12BB9A01FAA23F1D05454146 /* Pods-YellowMessenger_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1ADD3ECE445C8A0BD5F08F79E132EA0B /* Pods-YellowMessenger_Tests.modulemap */,
+				128A009DFABE3E64DF3BC42BD5E23187 /* Pods-YellowMessenger_Tests-acknowledgements.markdown */,
+				B18C691EF2235BFFEAFDDED91D087B64 /* Pods-YellowMessenger_Tests-acknowledgements.plist */,
+				1DBF9F515B3CCB6CCB153CA6DC208577 /* Pods-YellowMessenger_Tests-dummy.m */,
+				14FAC34EFEECDEEC93F17768D5E5644C /* Pods-YellowMessenger_Tests-Info.plist */,
+				745DD8D7DE0B01A3BD13D76FB188A9E2 /* Pods-YellowMessenger_Tests-umbrella.h */,
+				C3BD52B275653A27B406033603CDD4D3 /* Pods-YellowMessenger_Tests.debug.xcconfig */,
+				2305E3219271B113F6922493F975B166 /* Pods-YellowMessenger_Tests.release.xcconfig */,
+			);
+			name = "Pods-YellowMessenger_Tests";
+			path = "Target Support Files/Pods-YellowMessenger_Tests";
+			sourceTree = "<group>";
+		};
+		AF060C2CACCF678E8EF95F59E7DE1CDB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89AA470081C1C8B54CCEEE98922E56CF /* Pods-YellowMessenger_Example */,
+				A5E8872B12BB9A01FAA23F1D05454146 /* Pods-YellowMessenger_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BD41853976BE6BCF9EA88274FDF66E57 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D3EA7ED1E79493AF2071F6E35DE53 /* YellowMessenger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BD41853976BE6BCF9EA88274FDF66E57 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F47C067AFB6882F12D0BB18F18E921E7 /* Products */,
+				AF060C2CACCF678E8EF95F59E7DE1CDB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F47C067AFB6882F12D0BB18F18E921E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1872CDECFB585D586A5FC6C53AB64F47 /* Pods_YellowMessenger_Example.framework */,
+				F543D14D623540F7FD5DBB1CBEB6CB2D /* Pods_YellowMessenger_Tests.framework */,
+				401B16E9D4AE71F79CC44B7ABBCBCFC9 /* YellowMessenger.bundle */,
+				49797F34F5F853DD59A669C9537B52A7 /* YellowMessenger.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0968BA390B01DA4F39F567CDF8450FD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179E4FBC9BB8894DCE61D1E3C51EC6AA /* YellowMessenger-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B29D6834836FF4F95756DD5B26491E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33BAFFF69D6BBA1EE2F1AD3BD00266E /* Pods-YellowMessenger_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF18EB5442C2BF3167ABA373F49B8F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095C12463E3E95B39CB9195520843946 /* Pods-YellowMessenger_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E420086FB3693814D1397772359AA48 /* YellowMessenger-YellowMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D409EB7379E02FF03D1AF4990F0E15 /* Build configuration list for PBXNativeTarget "YellowMessenger-YellowMessenger" */;
+			buildPhases = (
+				1A4BBA0A68EDCAB8AC4603E1C7A2AAFD /* Sources */,
+				78124DBB60EFCEF3DECBAC487BC0096A /* Frameworks */,
+				697E2669281B3104EC7816E9C8DA5347 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YellowMessenger-YellowMessenger";
+			productName = "YellowMessenger-YellowMessenger";
+			productReference = 401B16E9D4AE71F79CC44B7ABBCBCFC9 /* YellowMessenger.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		65E00CC57D3AFAD51149E50DAC411496 /* Pods-YellowMessenger_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C81EF24F99C992C3CB92A98506C8EDBC /* Build configuration list for PBXNativeTarget "Pods-YellowMessenger_Example" */;
+			buildPhases = (
+				C9B29D6834836FF4F95756DD5B26491E /* Headers */,
+				E288BBD9F74791BB5FCFEB7BC29DD213 /* Sources */,
+				1507BBD349E9F772BF5B85D4402B0A9E /* Frameworks */,
+				E3B1979BFC8EB609CD11563DA912D9C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AB10D03921ABB355B9EBAD22705B01E /* PBXTargetDependency */,
+			);
+			name = "Pods-YellowMessenger_Example";
+			productName = "Pods-YellowMessenger_Example";
+			productReference = 1872CDECFB585D586A5FC6C53AB64F47 /* Pods_YellowMessenger_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6832DB0413E182C9DD7346E4EBFB9A26 /* YellowMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DFE16734388EC3C58181D48978D49D7 /* Build configuration list for PBXNativeTarget "YellowMessenger" */;
+			buildPhases = (
+				0968BA390B01DA4F39F567CDF8450FD8 /* Headers */,
+				220ABC91331A855B275B886722965997 /* Sources */,
+				450968C224E4EACA9DA4C6F55FEB761E /* Frameworks */,
+				D73B94357C71503D2FC46E618A54DFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0E038C7D948F3803CF023746FC7686 /* PBXTargetDependency */,
+			);
+			name = YellowMessenger;
+			productName = YellowMessenger;
+			productReference = 49797F34F5F853DD59A669C9537B52A7 /* YellowMessenger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF3BC98B90BE783B6AAEEA761CAEEFE8 /* Pods-YellowMessenger_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D299C4904EC31C9A8DEB225D8AEAB217 /* Build configuration list for PBXNativeTarget "Pods-YellowMessenger_Tests" */;
+			buildPhases = (
+				DBF18EB5442C2BF3167ABA373F49B8F8 /* Headers */,
+				BB1809792947B9FCD4C866AD92D621C7 /* Sources */,
+				906DAC75969FE17E3AE56F8D7AA47089 /* Frameworks */,
+				E493592861AF600D0B86846C78AC8356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C89337D8286797700A01075E2B9E56B /* PBXTargetDependency */,
+			);
+			name = "Pods-YellowMessenger_Tests";
+			productName = "Pods-YellowMessenger_Tests";
+			productReference = F543D14D623540F7FD5DBB1CBEB6CB2D /* Pods_YellowMessenger_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F47C067AFB6882F12D0BB18F18E921E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65E00CC57D3AFAD51149E50DAC411496 /* Pods-YellowMessenger_Example */,
+				CF3BC98B90BE783B6AAEEA761CAEEFE8 /* Pods-YellowMessenger_Tests */,
+				6832DB0413E182C9DD7346E4EBFB9A26 /* YellowMessenger */,
+				4E420086FB3693814D1397772359AA48 /* YellowMessenger-YellowMessenger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		697E2669281B3104EC7816E9C8DA5347 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4FC04B6AC1636A73712CC335B423293 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D73B94357C71503D2FC46E618A54DFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F534B0A6CC9ED589FD942D2C2020165D /* YellowMessenger.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B1979BFC8EB609CD11563DA912D9C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E493592861AF600D0B86846C78AC8356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A4BBA0A68EDCAB8AC4603E1C7A2AAFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220ABC91331A855B275B886722965997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4EE89532EA3DAA8B7F52F648EDB55A /* YellowMessenger-dummy.m in Sources */,
+				CA792703F872C63F9A0FC2576910F320 /* YmBotPlugin.swift in Sources */,
+				A0CF63464D6D7D01349DFDC51D62FCDC /* YmEvents.swift in Sources */,
+				3D5541A59F33D1C02F619892F674E780 /* YmSDK.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1809792947B9FCD4C866AD92D621C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				242B11E3709394D4286E6CDBA57A8B22 /* Pods-YellowMessenger_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E288BBD9F74791BB5FCFEB7BC29DD213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A63D7FFBF54194DF493B2B02BFDA947 /* Pods-YellowMessenger_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0E038C7D948F3803CF023746FC7686 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "YellowMessenger-YellowMessenger";
+			target = 4E420086FB3693814D1397772359AA48 /* YellowMessenger-YellowMessenger */;
+			targetProxy = 5BB5325D0EDB3A4AC3C3C198588F4F62 /* PBXContainerItemProxy */;
+		};
+		6C89337D8286797700A01075E2B9E56B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YellowMessenger_Example";
+			target = 65E00CC57D3AFAD51149E50DAC411496 /* Pods-YellowMessenger_Example */;
+			targetProxy = 22485AAA3A538F427C613FFC5D2C9FB2 /* PBXContainerItemProxy */;
+		};
+		9AB10D03921ABB355B9EBAD22705B01E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YellowMessenger;
+			target = 6832DB0413E182C9DD7346E4EBFB9A26 /* YellowMessenger */;
+			targetProxy = 1CB0DE4854EC993D8F1FA6B469A253E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04ACE47E992EEB2025622E2F6F46ACDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7FFDE30E13CC4598D5E19AE21C9A7F /* YellowMessenger.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YellowMessenger";
+				IBSC_MODULE = YellowMessenger;
+				INFOPLIST_FILE = "Target Support Files/YellowMessenger/ResourceBundle-YellowMessenger-YellowMessenger-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = YellowMessenger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		34EF01CE1079008D0F3D745062144622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3BD52B275653A27B406033603CDD4D3 /* Pods-YellowMessenger_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YellowMessenger_Tests/Pods-YellowMessenger_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YellowMessenger_Tests/Pods-YellowMessenger_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67FDACEDFEE0E61B3FE328AB0FFCC3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A230246A08C87530DA0C0454F0DBB866 /* YellowMessenger.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YellowMessenger/YellowMessenger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YellowMessenger/YellowMessenger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YellowMessenger/YellowMessenger.modulemap";
+				PRODUCT_MODULE_NAME = YellowMessenger;
+				PRODUCT_NAME = YellowMessenger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F50B8EE8829780A2C29B0AA304A93F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A230246A08C87530DA0C0454F0DBB866 /* YellowMessenger.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/YellowMessenger";
+				IBSC_MODULE = YellowMessenger;
+				INFOPLIST_FILE = "Target Support Files/YellowMessenger/ResourceBundle-YellowMessenger-YellowMessenger-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = YellowMessenger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		85508E05DF17D0ABFDEBD7C1BD2AB3AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7FFDE30E13CC4598D5E19AE21C9A7F /* YellowMessenger.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YellowMessenger/YellowMessenger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YellowMessenger/YellowMessenger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YellowMessenger/YellowMessenger.modulemap";
+				PRODUCT_MODULE_NAME = YellowMessenger;
+				PRODUCT_NAME = YellowMessenger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87C7FBC34C6D4344C08E70A5C143F9F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2305E3219271B113F6922493F975B166 /* Pods-YellowMessenger_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YellowMessenger_Tests/Pods-YellowMessenger_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YellowMessenger_Tests/Pods-YellowMessenger_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D476045B2F98092B56AB7DFA394808DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96C5D8424C68097AEA2700D6C804ADD /* Pods-YellowMessenger_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YellowMessenger_Example/Pods-YellowMessenger_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YellowMessenger_Example/Pods-YellowMessenger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE5DA5BDB3A58B75A1475A3FD18F4740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 189A048489759DF562FF1C81BC5A12F0 /* Pods-YellowMessenger_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YellowMessenger_Example/Pods-YellowMessenger_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YellowMessenger_Example/Pods-YellowMessenger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DFE16734388EC3C58181D48978D49D7 /* Build configuration list for PBXNativeTarget "YellowMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85508E05DF17D0ABFDEBD7C1BD2AB3AC /* Debug */,
+				67FDACEDFEE0E61B3FE328AB0FFCC3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D409EB7379E02FF03D1AF4990F0E15 /* Build configuration list for PBXNativeTarget "YellowMessenger-YellowMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ACE47E992EEB2025622E2F6F46ACDC /* Debug */,
+				6F50B8EE8829780A2C29B0AA304A93F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C81EF24F99C992C3CB92A98506C8EDBC /* Build configuration list for PBXNativeTarget "Pods-YellowMessenger_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D476045B2F98092B56AB7DFA394808DC /* Debug */,
+				DE5DA5BDB3A58B75A1475A3FD18F4740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D299C4904EC31C9A8DEB225D8AEAB217 /* Build configuration list for PBXNativeTarget "Pods-YellowMessenger_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34EF01CE1079008D0F3D745062144622 /* Debug */,
+				87C7FBC34C6D4344C08E70A5C143F9F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

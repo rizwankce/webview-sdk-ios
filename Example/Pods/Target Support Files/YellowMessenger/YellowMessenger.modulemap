@@ -1,0 +1,6 @@
+framework module YellowMessenger {
+  umbrella header "YellowMessenger-umbrella.h"
+
+  export *
+  module * { export * }
+}

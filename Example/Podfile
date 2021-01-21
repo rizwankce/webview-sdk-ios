@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '11.0'
+
+target 'YellowMessenger_Example' do
+  pod 'YellowMessenger', :path => '../'
+
+  target 'YellowMessenger_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
