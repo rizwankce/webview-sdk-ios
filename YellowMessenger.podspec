@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'YellowMessenger' => ['YellowMessenger/**/*.xcassets']
   }
+  s.swift_version = "5.0"
 end

@@ -23,5 +23,7 @@
     "YellowMessenger": [
       "YellowMessenger/**/*.xcassets"
     ]
-  }
+  },
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }

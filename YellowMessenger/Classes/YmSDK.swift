@@ -160,7 +160,7 @@ public class ChatController: UIViewController, WKScriptMessageHandler, WKNavigat
         cancelButton.frame = CGRect(x: (self.view.frame.width - 50), y: (statusBarHeight + 15.0), width: 25, height: 25)
         cancelButton.addTarget(self, action: #selector(dismisViewController), for: .touchUpInside)
         view.addSubview(cancelButton)
-        view.bringSubview(toFront: cancelButton)
+        view.bringSubviewToFront(cancelButton)
     }
     
     public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
@@ -241,8 +241,8 @@ public class ChatController: UIViewController, WKScriptMessageHandler, WKNavigat
         
         let audioSession = AVAudioSession.sharedInstance()
         do {
-            try audioSession.setCategory(AVAudioSessionCategoryRecord, mode: AVAudioSessionModeMeasurement, options: .duckOthers)
-            try audioSession.setActive(true, with: .notifyOthersOnDeactivation)
+            try audioSession.setCategory(AVAudioSession.Category.record, mode: AVAudioSession.Mode.measurement, options: .duckOthers)
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
         } catch {
             print("audioSession properties weren't set because of an error.")
         }
