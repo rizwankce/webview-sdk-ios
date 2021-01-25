@@ -14,10 +14,10 @@ public class YmBotPlugin{
     public static let shared = YmBotPlugin()
     public var configData: [String : String]
     public var payloadData: String
-
+    
     public let events : EventManager
     var window : UIWindow
-
+    
     private init(){
         self.configData = Dictionary<String, String>()
         self.payloadData = ""
@@ -43,16 +43,16 @@ public class YmBotPlugin{
             self.window = window
             window.makeKeyAndVisible()
         }
-
+        
     }
     
     public func stopChatBot(){
         self.window.rootViewController = nil
     }
-
+    
     public func setPayload(payload: Dictionary<String, String>) {
-            payloadData = "%7B"
-         payload.forEach({ (key: String, value: String) in
+        payloadData = "%7B"
+        payload.forEach({ (key: String, value: String) in
             payloadData += "%22\(key)%22:%22\(value)%22,"
         })
         payloadData += "%22Platform%22:%22iOS-App%22%7D"

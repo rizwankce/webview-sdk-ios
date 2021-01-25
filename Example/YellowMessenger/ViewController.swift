@@ -57,6 +57,10 @@ class ViewController: UIViewController {
 
         //Start the chatbot webview
         YmBotPlugin.shared.startChatBot(view: self.view) //Step 4
+
+        YmBotPlugin.shared.events.listenTo(eventName: "BotCloseEvent") {
+            print("bot is closing")
+        }
     }
 }
 

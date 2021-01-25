@@ -14,7 +14,7 @@ public class EventManager {
         let newListener = EventListenerAction(callback: action);
         addListener(eventName: eventName, newEventListener: newListener);
     }
-
+    
     public func listenTo(eventName:String, action: @escaping ((Any?)->())) {
         let newListener = EventListenerAction(callback: action);
         addListener(eventName: eventName, newEventListener: newListener);
@@ -40,7 +40,7 @@ public class EventManager {
             self.listeners.removeAll(keepingCapacity: false);
         }
     }
-
+    
     public func trigger(eventName:String, information:Any? = nil) {
         if let actionObjects = self.listeners[eventName] {
             for actionObject in actionObjects {
