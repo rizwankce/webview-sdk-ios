@@ -177,9 +177,9 @@ public class ChatController: UIViewController, WKScriptMessageHandler, WKNavigat
 
 
     @objc func dismisViewController() {
+        YmBotPlugin.shared.events.trigger(eventName: "BotCloseEvent", information: [:])
         self.view.window?.isHidden = true
         self.presentingViewController?.dismiss(animated: true, completion: nil)
-        YmBotPlugin.shared.events.trigger(eventName: "BotCloseEvent", information: [:])
     }
     
     override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
