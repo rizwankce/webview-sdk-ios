@@ -23,7 +23,10 @@ class ViewController: UIViewController {
     //Add the following function in ViewController.swift
     func openWebView(_ sender: Any) {
         //Set Configuration data
-        let config:[String:String] = ["BotId" : "<<BOT-ID>>"] // FIXME:- add your bot id here
+        let config:[String:String] = [
+            "BotId" : "<<bot id>>", // FIXME:- add your bot id here
+            "EnableHistory": "true"
+        ]
 
         //Initialize the plugin with config values.
         YmBotPlugin.shared.initPlugin(config: config) //Step 1

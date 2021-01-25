@@ -90,7 +90,10 @@ public class ChatController: UIViewController, WKScriptMessageHandler, WKNavigat
         view.addSubview(webView)
         let payload = YmBotPlugin.shared.payloadData
 
-        let urlString = "https://yellowmessenger.github.io/pages/dominos/mobile.html?botId=\(YmBotPlugin.shared.configData["BotId"] ?? "")&enableHistory=false&hideTitleBar=false&ym.payload=\(payload)"
+        let enableHistory = YmBotPlugin.shared.configData["EnableHistory"] != nil && YmBotPlugin.shared.configData["EnableHistory"] == "true"
+        let urlString = """
+        https://yellowmessenger.github.io/pages/dominos/mobile.html?botId=\(YmBotPlugin.shared.configData["BotId"] ?? "")&enableHistory=\(enableHistory ? "true" : "false")&hideTitleBar=false&ym.payload=\(payload)
+        """
 
         print(urlString)
         
